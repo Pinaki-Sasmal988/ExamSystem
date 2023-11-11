@@ -5,17 +5,6 @@ use App\Http\Controllers\ExamController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuizController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 //    Route::get('/', function () {
 //       return view('CreateAccount');
 //  });
@@ -37,3 +26,4 @@ Route::get('/add{id}',[QuizController::class,'Add']);
 Route::POST('/add_question',[QuizController::class,'AddQuestion']);
 Route::get('/view{id}',[QuizController::class,'View']);
 Route::get('/StartExam{id}',[ExamController::class,'StartExam']);
+Route::get('/check',[ExamController::class,'check']);

@@ -20,7 +20,7 @@
             
 						<form method="POST" action="/CreateAccount" class="register-form"
 							id="register-form">
-              @csrf
+                             @csrf
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
